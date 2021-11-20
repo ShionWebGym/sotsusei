@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/fadein.scss"
+    ],
+    "names": [],
+    "file": "fadein.css"
+}

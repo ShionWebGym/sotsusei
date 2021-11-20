@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAA;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,QAAQ;CACrB;;AACD,AAAA,kBAAkB,CAAA;EACd,cAAc,EAAE,IAAI;CACvB;;AACD,AAAA,KAAK,CAAA;EACD,mBAAmB,CAAA,IAAC;EACpB,yBAAyB,CAAA,QAAC;EAC1B,+BAA+B,CAAA,KAAC;CACnC",
+    "sources": [
+        "../scss/slideshow.scss"
+    ],
+    "names": [],
+    "file": "slideshow.css"
+}

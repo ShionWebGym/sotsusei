@@ -1,0 +1,50 @@
+.blur-sample-img img {
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+}
+
+.blur-content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blur-sample-img:not(:first-child) {
+  margin-left: 40px;
+}
+
+.blur-sample-img:not(:nth-child(2)) img:hover {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.blur-sample-img:nth-child(3) img:hover {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+
+.blur-sample-img:nth-child(2) img {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.blur-sample-img:nth-child(2) {
+  position: relative;
+}
+
+.blur-neko {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  top: 160px;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+}
+/*# sourceMappingURL=blur.css.map */

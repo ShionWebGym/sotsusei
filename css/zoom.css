@@ -1,0 +1,45 @@
+.zoom-content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.zoom-sample-img:not(:first-child) {
+  margin-left: 40px;
+}
+
+.zoom-sample-img:not(:last-child) img {
+  border-radius: 24px;
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+}
+
+.zoom-sample-img:not(:last-child) img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.zoom-sample-img:last-child img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+}
+
+.zoom-sample-img:last-child img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.zoom-sample-img:not(:nth-child(2)) {
+  overflow: hidden;
+  border-radius: 24px;
+}
+/*# sourceMappingURL=zoom.css.map */

@@ -1,0 +1,128 @@
+// main-component
+main {
+    font-family: a-otf-ud-shin-maru-go-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.split{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+// split-right-side
+.split-right{
+    height: 3270px;
+}
+.main-title{
+    margin: auto;
+}
+.main-title h1{
+    font-size: 1.8em;
+    margin: 50vh auto 0;
+	transform: translateY(-50%);
+    display: block;
+    margin-left: 100px;
+}
+.mokuzi{
+    margin-left: 100px;
+}
+.cat{
+    font-size: 2rem;
+}
+.mokuzi h2{
+    font-size: 3rem;
+    padding-bottom: 80px;
+    margin-top: 420px;
+}
+.mokuzi-list{
+    margin: auto;
+    line-height: 70px;
+    ul{
+        margin-bottom: 30px;
+    }
+    a {
+        color: #2566F7;
+        font-size: 1.2rem;
+        display: inline-block;
+        }
+        a:hover {
+        color: coral;
+        -webkit-animation: zoom .3s;
+        animation: zoom .3s;
+        }
+        @-webkit-keyframes zoom {
+        50% {
+            -webkit-transform: scale(1.05);
+        }
+        }
+        @keyframes zoom {
+        50% {
+            transform: scale(1.05);
+        }
+        }
+}
+.mokuzi_list li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+.copy{
+    margin-bottom: 30px;
+    margin-top: 200px;
+    text-align: center;
+}
+// split-left-side
+.split-left{
+    position: relative;
+}
+.content-container{
+    text-align: center;
+    position: fixed;
+    width: 50%;
+    // margin:40vh auto 0;
+    background-color: beige;
+    height: 2000px;
+    margin-top: 0;
+}
+.content-container h3{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 400px;
+    color:coral;
+}
+// zukan page
+.kimochi-point{
+    margin: 100px 0 50px 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.zukan-page{
+    text-align: center;
+    &-title{
+        font-size: 1.6rem;
+        margin: 24px 0 16px 0;
+    }
+    &-desc{
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin-bottom: 36px;
+        text-align: left;
+        display: inline-block;
+        padding-left: 40px;
+    }
+}
+.back-mokuzi {
+	display: inline-block;
+	transition: 0.1s;
+	color: #EC407A;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.back-mokuzi:hover {
+	transform: rotate(12deg);
+}
+.btn-desc{
+    max-width: 829px;
+}
