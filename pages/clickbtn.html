@@ -18,6 +18,7 @@
         })(document);
         </script>
         <script src="https://kit.fontawesome.com/811a4b5ae2.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <title>マウスクリック（ボタン）</title>
 </head>
 <body>
@@ -25,16 +26,20 @@
         <p class="kimochi-point">！きもちいいポイント：クリックした動作が確認できる</p>
         <div class="clickbtn-content_container">
             <button class="bubbly-button">クリック！</button>
-            <div class="clickbtn">クリック！</div>
-            <div class="clickbtn">クリック！</div>
-            <div class="clickbtn">クリック！</div>
+            <button class="clickbtn-ripple">クリック！
+                <!-- <span class="clickbtn-ripple_effect"></span> -->
+            </button>
+            <a href="#" class="clickbtn-shadow">クリック！</a>
+            <div class="clickbtn-bound">
+                <p>クリック！</p>
+            </div>
         </div>
         <div class="zukan-page">
             <h1 class="zukan-page-title">マウスクリック（ボタン）</h1>
             <div class="desc-container">
                 <p class="zukan-page-desc btn-desc">
                     WEBサイトには様々なボタンが使われていますが、ここではマウスクリックしたときにアニメーションするボタンを紹介しています！<br>
-                    クリックした後の動作がユーザー自身の目で確認できるので、派手なものでなくともアニメーションは付けると良い体験にもつながるのではないでしょうか！
+                    クリックした後の動作がユーザー自身の目で確認できるので、派手なものでなくともアニメーションは付けると良い体験にもつながるのではないでしょうか
                     </p>
             </div>
             <a href="../code/index.html" class="back-mokuzi">目次へ戻る</a>
@@ -59,6 +64,17 @@ var bubblyButtons = document.getElementsByClassName("bubbly-button");
 for (var i = 0; i < bubblyButtons.length; i++) {
 bubblyButtons[i].addEventListener('click', animateButton, false);
 }
+    
+let btn = document.querySelector('.clickbtn-bound');
+
+btn.addEventListener('click',function(){
+    let duration = 0.3,
+        delay= 0.08;
+        
+    TweenMax.to(btn, duration, {scaleY: 1.6, ease: Expo.easeOut});
+    TweenMax.to(btn, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+    TweenMax.to(btn, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+}, );
     </script>
 </body>
 </html>

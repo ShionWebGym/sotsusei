@@ -128,3 +128,78 @@ $baby-blue: #f8faff;
     }
 }
 
+
+.clickbtn-ripple {
+    background-position: center;
+    transition: background 0.8s;
+    }
+    .clickbtn-ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+    }
+    .clickbtn-ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+    }
+    
+ 
+    .clickbtn-ripple{
+    width: 200px;
+    height: 60px;
+    margin:80px 24px auto;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    }
+
+    .clickbtn-shadow{
+        text-align: center;
+        width: 200px;
+        height: 60px;
+        margin:80px 24px auto;
+        display: inline-block;
+        padding: 1.1em 1em;
+        text-decoration: none;
+        background: #668ad8;
+        color: #FFF;
+        border-bottom: solid 4px #627295;
+        border-radius: 3px;
+        }
+        .clickbtn-shadow:active {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+        border-bottom: none;
+        }
+
+        .clickbtn-bound{
+            font-weight: 700;
+            background: #8AC75A;
+            width: 180px;
+            padding: 20px 0;
+            position: absolute;
+            left: 59%;
+            top: 52%;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 3px;
+            p {
+            font-family: 'Roboto'; 
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFF;
+            user-select: none;
+            }
+            
+            &:hover {
+            cursor: pointer;
+            }
+            
+        }
