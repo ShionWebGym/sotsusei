@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/send.css">
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'odm7isa',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+        </script>
+        <script src="https://kit.fontawesome.com/811a4b5ae2.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <title>マウスクリック（ボタン）</title>
+</head>
+<body>
+    <main class="content">
+        <div class="send-content_container">
+            <h2 class="login">Login Form</h2>
+                <form>
+                    <div class="group">      
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Name</label>
+                    </div>
+                    <div class="group">      
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                </form>
+                <div class="container">
+                    <button id="button"></button>
+                </div>
+                <a href="#" class="pas">パスワードをお忘れですか？</a>
+        </div>
+        <div class="zukan-page">
+            <h1 class="zukan-page-title">ログインフォーム＆送信ボタン</h1>
+            <div class="desc-container">
+                <p class="zukan-page-desc btn-desc">
+                    SNSなどのサービスを使う中でアカウント登録、ログイン機能はほぼ必須というほど情報入力をする機会は多いと思います。
+                    ユーザーがストレスなく情報を登録完了するまで道案内してくれるアニメーションは入力してきもちいいですね！
+                </p>
+            </div>
+            <a href="../code/index.html" class="back-mokuzi">目次へ戻る</a>
+            <p class="copy"><small>© shion 2021</small></p>
+        </div>
+    </main>
+    <script>
+        $(function() {
+    $( "#button" ).click(function() {
+    $( "#button" ).addClass( "onclic", 250, validate);
+    });
+
+    function validate() {
+    setTimeout(function() {
+        $( "#button" ).removeClass( "onclic" );
+        $( "#button" ).addClass( "validate", 450, callback );
+    }, 2250 );
+        }
+    function callback() {
+        setTimeout(function() {
+        $( "#button" ).removeClass( "validate" );
+        }, 1250 );
+    }
+    });
+    </script>
+</body>
+</html>

@@ -5,10 +5,8 @@ main {
 }
 
 .split {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .split-right {
@@ -22,8 +20,7 @@ main {
 .main-title h1 {
   font-size: 1.8em;
   margin: 50vh auto 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: block;
   margin-left: 100px;
 }
@@ -59,20 +56,12 @@ main {
 
 .mokuzi-list a:hover {
   color: coral;
-  -webkit-animation: zoom .3s;
   animation: zoom .3s;
-}
-
-@-webkit-keyframes zoom {
-  50% {
-    -webkit-transform: scale(1.05);
-  }
 }
 
 @keyframes zoom {
   50% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
   }
 }
 
@@ -135,7 +124,6 @@ main {
 
 .back-mokuzi {
   display: inline-block;
-  -webkit-transition: 0.1s;
   transition: 0.1s;
   color: #EC407A;
   font-weight: 700;
@@ -143,8 +131,7 @@ main {
 }
 
 .back-mokuzi:hover {
-  -webkit-transform: rotate(12deg);
-          transform: rotate(12deg);
+  transform: rotate(12deg);
 }
 
 .btn-desc {

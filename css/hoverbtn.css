@@ -8,13 +8,9 @@
 }
 
 .hoverbtn-content_container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 250px 250px;
-      grid-template-columns: 250px 250px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: 250px 250px;
+  justify-content: center;
   grid-auto-rows: 200px;
 }
 
@@ -38,7 +34,6 @@
 
 .hoverbtn-remove :hover .hoverbtn-remove_text {
   right: 100%;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -46,7 +41,6 @@
   width: 100%;
   height: 100%;
   border-left: 0;
-  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   font-size: 1.5em;
 }
@@ -56,7 +50,6 @@
   padding: 16px 0;
   top: 0;
   right: 0;
-  -webkit-transition: right 300ms ease;
   transition: right 300ms ease;
   margin-right: 70px;
   width: 131px;
@@ -64,7 +57,6 @@
 
 .hoverbtn-remove_icon {
   border-left: 1px solid #ED3B63;
-  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   position: absolute;
   top: 12%;
@@ -79,7 +71,6 @@
 }
 
 .hoverbtn-ghost {
-  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   color: #ffffff;
 }
@@ -89,12 +80,10 @@
   border: #1b1b1b 2px solid;
   border-radius: 2px;
   padding: 18px 50px;
-  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
 .hoverbtn-ghost a:hover {
-  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   background: #ffffff;
   color: #1b1b1b;
@@ -117,7 +106,6 @@
   position: absolute;
   top: 34px;
   left: 50%;
-  -webkit-transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -135,17 +123,14 @@
 .hoverbtn-flip {
   position: relative;
   cursor: pointer;
-  -webkit-transition-duration: 0.6s;
-          transition-duration: 0.6s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transition-duration: 0.6s;
+  transform-style: preserve-3d;
   width: 185px;
   height: 80px;
 }
 
 .hoverbtn-flip:hover {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 .hoverbtn-flip_front {
@@ -157,8 +142,7 @@
   padding: 30px 50px;
   position: absolute;
   z-index: 2;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .hoverbtn-flip_front a {
@@ -176,10 +160,8 @@
   font-weight: 700;
   padding: 30px 50px;
   position: absolute;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
 }
 
 .hoverbtn-flip_back a {
