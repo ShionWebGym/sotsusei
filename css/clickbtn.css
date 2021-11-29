@@ -166,6 +166,8 @@
   top: 52%;
   transform: translateX(-50%) translateY(-50%);
   border-radius: 3px;
+  margin-top: 28px;
+  margin-left: 20px;
 }
 
 .clickbtn-bound p {
