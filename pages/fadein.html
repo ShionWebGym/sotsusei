@@ -17,37 +17,58 @@
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
         </script>
-    <title>パララックス</title>
+    <title>フェードイン</title>
 </head>
 <body>
     <main class="content">
-        <p class="kimochi-point">！きもちいいポイント：サイトの奥行感、立体感を出せる</p>
-        <div class="parallax">
-            <div class="parallax-content_container">
-                <div class="parallax-yohaku"><p>スクロールしてください</p></div>
-                <div class="parallax-bg rellax" data-rellax-speed="2"><span class="parallax-sample_text">SKYSCRAPER</span></div>
-                <div class="parallax-yohaku"></div>
+        <h1 class="zukan-page-title">フェードイン</h1>
+        <div class="fadein">
+            <div class="fadein-content_container">
+                <div class="fadein-sample scroll-trigger">
+                    <img src="../code/images/sample-parallax.jpg" alt="sample-image" class="fadein-sample_image">
+                    <p>サンプルきもちいい</p>
+                </div>
+                <div class="fadein-sample scroll-trigger poyoyon">
+                    <img src="../code/images/sample-parallax2.jpg" alt="sample-image" class="fadein-sample_image">
+                    <p>サンプルきもちいい</p>
+                </div>
+                <div class="fadein-sample scroll-trigger fadeup">
+                    <img src="../code/images/sample-parallax3.jpg" alt="sample-image" class="fadein-sample_image">
+                    <p>サンプルきもちいい</p>
+                </div>
             </div>
-            <!-- <div class="parallax-content_container">
-                <div class="parallax-bg2"><span class="parallax-sample_text">CATCATCAT</span></div>
-                <div class="parallax-yohaku"><p>スクロールしてください</p></div>
-                <div class="parallax-bg2"><span class="parallax-sample_text">CATCATCAT</span></div>
-            </div> -->
         </div>
         <div class="zukan-page">
-            <h1 class="zukan-page-title">パララックス</h1>
-            <div class="desc-container">
-                <p class="zukan-page-desc"> 
-                    パララックスとは視差効果のことで、主にwebデザインにおけるパララックスとは<br>
-                    スクロールした際に見えている他の要素が意図的に動かなかったり<br>
-                    逆に異なるスピードで動いたりして立体感や奥行などを出す効果です。<br>
-                    慣性スクロールを用いるともっときもちよくなる気がします。</p>
+                <p class="kimochi-point">！きもちいいポイント：ぬるっ、ふわっ、ぽよーん</p>
+                <div class="desc-container">
+                <p class="zukan-page-desc btn-desc"> 
+                    フェードインといっても一つではなく他に呼び方が存在するアニメーションをいくつか載せてみました。
+                    これらがあるかないかで、webサイトのコンテンツを見る際、ユーザーが迷いづらかったりコンテンツを強調させ興味を引かせることができます。是非更新して試してみてください！</p>
                 </div>
             <a href="../code/index.html" class="back-mokuzi">目次へ戻る</a>
             <p class="copy"><small>© shion 2021</small></p>
         </div>
     </main>
-    <script src="../js/rellax.min.js"></script>
-    <script src="../js/index.js"></script>
+    <script>
+const scrollTrigger = document.querySelectorAll('.scroll-trigger');
+
+if (scrollTrigger.length) {
+    scrollAnimation(scrollTrigger);
+}
+
+function scrollAnimation(trigger) {
+    window.addEventListener('scroll', function () {
+        for (var i = 0; i < trigger.length; i++) {
+            let position = trigger[i].getBoundingClientRect().top,
+                scroll = window.pageYOffset || document.documentElement.scrollTop,
+                offset = position + scroll,
+                windowHeight = window.innerHeight;
+            if (scroll > offset - windowHeight + 500) {
+                trigger[i].classList.add('is-animated');
+            }
+        }
+    });
+}
+    </script>
 </body>
 </html>
