@@ -114,26 +114,25 @@ main {
         padding-left: 40px;
     }
 }
+
+$linkpink:deeppink;
+
 .back-mokuzi {
     margin-top: 20px;
-	display: inline-block;
-    font-weight: 400;
-    padding:16px 32px 16px 32px;
     text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    color: $linkpink;
+    font-size: 16px;
+    margin: 70px 80px 0;
+    border-bottom: #fff solid 1px;
+    &:hover{
+        border-bottom: $linkpink solid 1px;
+    }
 }
-.back-mokuzi:hover {
-	background-position: right center;
-}
+
 .btn-desc{
     max-width: 829px;
 }
 .emoji{
     font-weight: 400;
+    padding-right: 4px;
 }
