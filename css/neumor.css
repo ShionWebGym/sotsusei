@@ -51,11 +51,14 @@
 
 .neumor {
   width: 100vw;
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #f3f0f1;
+}
+
+body {
   background: #f3f0f1;
 }
 /*# sourceMappingURL=neumor.css.map */
