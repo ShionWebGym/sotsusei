@@ -85,14 +85,14 @@ main {
   position: fixed;
   width: 50%;
   background-color: beige;
-  height: 2000px;
+  height: 100%;
   margin-top: 0;
 }
 
 .content-container h3 {
   font-size: 5rem;
   font-weight: 700;
-  margin-top: 400px;
+  margin-top: 43%;
   color: coral;
 }
 
