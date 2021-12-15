@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+}
+
+.zukan-page-title {
+  margin-top: 300px;
+  font-size: 2.7rem;
+}
+
+.sample-content {
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+.sample-content_container {
+  margin-top: 30vh;
+  margin-bottom: 50vh;
+}
+
+.button-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 400px;
+  position: fixed;
+  width: 100%;
+  top: 45vh;
+}
+
+.button {
+  width: 160px;
+  height: 80px;
+  display: inline-block;
+  padding-top: 23px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 5px;
+  transition: .2s;
+}
+
+li {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: .2s;
+}
+
+li:first-child {
+  background: #1ABC9C;
+}
+
+li:first-child:hover {
+  border: 2px solid #1ABC9C;
+  transition: .2s;
+}
+
+li:nth-child(2) {
+  background: #3498DB;
+}
+
+li:nth-child(2):hover {
+  border: 2px solid #3498DB;
+  transition: .2s;
+}
+
+li:nth-child(3) {
+  background: #9B59B6;
+}
+
+li:nth-child(3):hover {
+  border: 2px solid #9B59B6;
+  transition: .2s;
+}
+
+li:nth-child(4) {
+  background: #E74C3C;
+}
+
+li:nth-child(4):hover {
+  border: 2px solid #E74C3C;
+  transition: .2s;
+}
+
+li:nth-child(5) {
+  background: #F1C40F;
+}
+
+li:nth-child(5):hover {
+  border: 2px solid #F1C40F;
+  transition: .2s;
+}
+
+li:hover {
+  background: #fff;
+  transition: .2s;
+}
+
+.button-container li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.sample-content {
+  padding-top: 240px;
+  letter-spacing: 5px;
+}
+
+.sample-content:first-child {
+  background: #1ABC9C;
+}
+
+.sample-content:nth-child(2) {
+  background: #3498DB;
+}
+
+.sample-content:nth-child(3) {
+  background: #9B59B6;
+}
+
+.sample-content:nth-child(4) {
+  background: #E74C3C;
+}
+
+.sample-content:nth-child(5) {
+  background: #F1C40F;
+}
+
+.kimochi-point {
+  margin-top: 200px;
+}
+
+.introtext {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.desc-container {
+  text-align: center;
+}
+
+.green:hover {
+  color: #1ABC9C;
+}
+
+.blue:hover {
+  color: #3498DB;
+}
+
+.purple:hover {
+  color: #9B59B6;
+}
+
+.red:hover {
+  color: #E74C3C;
+}
+
+.yellow:hover {
+  color: #F1C40F;
+}
+
+.backtop {
+  position: fixed;
+  right: 48.5%;
+  bottom: 100px;
+  font-size: 2.5rem;
+}
+
+@keyframes wobble-vertical {
+  16.65% {
+    transform: translateY(8px);
+  }
+  33.3% {
+    transform: translateY(-6px);
+  }
+  49.95% {
+    transform: translateY(4px);
+  }
+  66.6% {
+    transform: translateY(-2px);
+  }
+  83.25% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wobble {
+  display: inline-block;
+}
+
+.wobble:hover {
+  animation-name: wobble-vertical;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+/*# sourceMappingURL=smoothscroll.css.map */

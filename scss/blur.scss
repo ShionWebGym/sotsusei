@@ -20,6 +20,10 @@
 }
 .blur-sample-img:nth-child(2) img{
     filter: blur(4px);
+    &:hover{
+        filter: blur(0);
+        transition: 0.3s;
+    }
 }
 .blur-sample-img:nth-child(2){
     position: relative;
@@ -30,7 +34,5 @@
     font-weight: 700;
     position: absolute;
     top: 160px;
-    bottom: 0;
     left: 50px;
-    right: 0;
 }
