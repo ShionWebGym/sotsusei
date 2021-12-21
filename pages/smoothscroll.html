@@ -31,7 +31,7 @@
                 <li><a href="#sample4" class="button red">Red</a></li>
                 <li><a href="#sample5" class="button yellow">Yellow</a></li>
             </ul>
-            <a href="#" class="backtop wobble">👆</a>
+            <a href="#" id="btt" class="backtop wobble">👆</a>
             <p class="kimochi-point">
             <span class="emoji">&#x1f973;</span>
             きもちいいポイント：ページ内移動がなめらかに！</p>
@@ -54,6 +54,20 @@
         </div>
     </main>
     <script>
+        window.onload=function(){
+        var scroll = document.querySelectorAll('.backtop');
+
+        var Animation = function() {
+        for(var i = 0; i < scroll.length; i++) {
+        var triggerMargin = 120;
+        if (window.innerHeight > scroll[i].getBoundingClientRect().top + triggerMargin) {
+        scroll[i].classList.add('opa');
+        }
+        }
+        }
+        window.addEventListener('scroll', Animation);
+    
+}  
     </script>
 </body>
 </html>
