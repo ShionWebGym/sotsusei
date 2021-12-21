@@ -31,6 +31,7 @@ main {
 
 .cat {
   font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 .mokuzi h2 {
@@ -45,13 +46,24 @@ main {
 }
 
 .mokuzi-list ul {
-  margin-bottom: 30px;
+  margin-bottom: 130px;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 30vh 38vh;
+}
+
+.mokuzi-list li {
+  margin: 0px auto 30px auto;
 }
 
 .mokuzi-list a {
   color: #2566F7;
   font-size: 1.2rem;
   display: inline-block;
+  width: 250px;
+  height: 350px;
+  border: 1px solid;
+  border-radius: 20px;
 }
 
 .mokuzi-list a:hover {

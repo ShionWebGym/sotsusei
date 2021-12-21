@@ -53,6 +53,20 @@
         </div>
     </main>
     <script>
+                window.onload=function(){
+        var scroll = document.querySelectorAll('.backtop');
+
+        var Animation = function() {
+        for(var i = 0; i < scroll.length; i++) {
+        var triggerMargin = 120;
+        if (window.innerHeight > scroll[i].getBoundingClientRect().top + triggerMargin) {
+        scroll[i].classList.add('opa');
+        }
+        }
+        }
+        window.addEventListener('scroll', Animation);
+    
+}  
     </script>
 </body>
 </html>

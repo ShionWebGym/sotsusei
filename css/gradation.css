@@ -116,7 +116,7 @@ body {
 .backtop {
   position: fixed;
   right: 48.5%;
-  bottom: 10vh;
+  bottom: 13vh;
   font-size: 2.5rem;
 }
 
@@ -150,5 +150,10 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+
+.opa {
+  opacity: 1;
+  transition: .2s;
 }
 /*# sourceMappingURL=gradation.css.map */

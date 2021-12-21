@@ -29,6 +29,7 @@ main {
 }
 .cat{
     font-size: 2rem;
+    margin-bottom: 40px;
 }
 .mokuzi h2{
     font-size: 3rem;
@@ -39,12 +40,22 @@ main {
     margin: auto;
     line-height: 70px;
     ul{
-        margin-bottom: 30px;
+        margin-bottom: 130px;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: 30vh 38vh;
+    }
+    li{
+        margin:0px auto 30px auto;
     }
     a {
         color: #2566F7;
         font-size: 1.2rem;
         display: inline-block;
+        width: 250px;
+        height: 350px;
+        border: 1px solid;
+        border-radius: 20px;
         }
         a:hover {
         color: coral;
