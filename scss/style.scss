@@ -3,6 +3,7 @@ main {
     font-family: a-otf-ud-shin-maru-go-pr6n, sans-serif;
     font-style: normal;
     font-weight: 300;
+    color: #333;
 }
 
 .split{
@@ -30,6 +31,11 @@ main {
 .cat{
     font-size: 2rem;
     margin-bottom: 40px;
+    background-color: beige;
+    border-radius: 20px;
+    width: 72%;
+    text-align: center;
+    line-height: 72px;
 }
 .mokuzi h2{
     font-size: 3rem;
@@ -38,29 +44,34 @@ main {
 }
 .mokuzi-list{
     margin: auto;
-    line-height: 70px;
     ul{
         margin-bottom: 130px;
         /* display: flex; */
-        display: grid;
-        grid-template-columns: 30vh 38vh;
+        // display: grid;
+        // grid-template-columns: 30vh 38vh;
     }
     li{
-        margin:0px auto 30px auto;
+        padding: 36px 0 36px 0;
     }
     a {
-        color: #2566F7;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-bottom: 1px solid #ccc;
         display: inline-block;
-        width: 250px;
-        height: 350px;
-        border: 1px solid;
-        border-radius: 20px;
+        width: 72%;
+        padding-bottom: 16px;
+        width: 72%;
+        // line-height: 72px;
+        // display: inline-block;
+        // width: 250px;
+        // height: 350px;
+        // border: 1px solid;
+        // border-radius: 20px;
         }
         a:hover {
         color: coral;
-        -webkit-animation: zoom .3s;
-        animation: zoom .3s;
+        // -webkit-animation: zoom .3s;
+        // // animation: zoom .3s;
         }
         @-webkit-keyframes zoom {
         50% {
@@ -78,7 +89,7 @@ main {
     font-size: 1.5rem;
 }
 .copy{
-    margin-bottom: 30px;
+    padding-bottom: 200px;
     margin-top: 200px;
     text-align: center;
 }
@@ -147,4 +158,8 @@ $linkpink:deeppink;
 .emoji{
     font-weight: 400;
     padding-right: 4px;
+}
+
+.fas{
+    float: right;
 }
