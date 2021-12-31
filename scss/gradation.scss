@@ -1,0 +1,143 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(../font/MOBO.otf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
+
+.gradation-move {
+    background: linear-gradient(270deg, #fccf31, #f55555);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+.gradation-landscape{
+    background: linear-gradient(360deg, #00dbff, #00d9ff, #00d3ff, #00caff, #3ebcff, #7da9ff, #b191ff, #d777ef, #ef5ed1, #fc4cba, #ff45b1);
+}
+.gradation-retro{
+    background-image: linear-gradient(90deg, hsl(241,77%,65%) 0%, hsl(241,77%,65%) 32%,hsl(292.429,77%,65%) 32%, hsl(292.429,77%,65%) 37%,hsl(343.857,77%,65%) 37%, hsl(343.857,77%,65%) 50%,hsl(35.286,77%,65%) 50%, hsl(35.286,77%,65%) 61%,hsl(86.714,77%,65%) 61%, hsl(86.714,77%,65%) 68%,hsl(138.143,77%,65%) 68%, hsl(138.143,77%,65%) 76%,hsl(189.571,77%,65%) 76%, hsl(189.571,77%,65%) 100%);
+}
+.gradation-triple{
+    background-image: linear-gradient(to right, #00dbff, #00e3e6, #01e7be, #6ee68d, #ade15d, #cdd042, #e9bd35, #ffa73b, #ff894d, #ff6a69, #ff508b, #ff45b1);
+    margin-bottom: 240px;
+}
+.gra-text{
+    height: 100vh;
+    font-size: 7rem;
+    font-family: Myfont;
+    text-align: center;
+    color: #fff;
+    padding-top: 45vh;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.zukan-page-title{
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 28px;
+    padding-top: 120px;
+    font-family: Myfont;
+    font-size: 7rem;
+    color: #F067B4;
+    background-image: linear-gradient( 135deg, #F6D242 10%, #FF52E5 100%);
+    }
+.zukan-page-desc{
+    padding-bottom: 80px;
+}
+.desc-container{
+    text-align: center;
+}
+
+.gra-nav{
+    position: fixed;
+    top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+    a{
+        // width: 160px;
+        height: 56px;
+        text-align: center;
+        display: inline-block;
+        font-family: Myfont;
+        font-size: 1.5rem;
+        -webkit-text-stroke:1px #000;
+        &:hover{
+            color: #fff;
+        }
+    }
+    li:not(:first-child){
+        margin-left: 56px;
+    }
+}
+.gra1{
+    color: #EF5350;
+}
+.gra2{
+    color: #FEDD51;
+}
+.gra3{
+    color: #37F07C;
+}
+.gra4{
+    color: #4344F0;
+}
+.backtop{
+    position: fixed;
+    right: 48.5%;
+    bottom: 13vh;
+    font-size: 2.5rem;
+}
+.wobble {
+    display: inline-block;
+    &:hover {
+    animation-name: wobble-vertical;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    }
+}
+@keyframes wobble-vertical {
+    16.65% {
+    transform: translateY(8px);
+    }
+    33.3% {
+    transform: translateY(-6px);
+    }
+    49.95% {
+    transform: translateY(4px);
+    }
+    66.6% {
+    transform: translateY(-2px);
+    }
+    83.25% {
+    transform: translateY(1px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+.opa{
+    opacity: 1;
+    transition: .2s;
+}
+
+
+
+
+

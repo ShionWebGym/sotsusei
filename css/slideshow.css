@@ -1,0 +1,18 @@
+.swiper-container {
+  width: 640px;
+  height: 405px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-pagination {
+  padding-bottom: 10px;
+}
+
+:root {
+  --swiper-thme-color:#fff;
+  --swiper-pagination-color: #ffffff;
+  --swiper-pagination-bullet-size: 10px;
+}
+/*# sourceMappingURL=slideshow.css.map */

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="icon" href="../images/1f4d6.png">
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'odm7isa',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+        </script>
+        <script src="https://kit.fontawesome.com/811a4b5ae2.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+        <title>ローディング画面</title>
+</head>
+<body>
+    <main class="content">
+        <h1 class="zukan-page-title">ローディング画面</h1>
+        <div class="loading-content_container">
+            <div class="item1">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+            <div class="item2">
+                <div class="sk-fading-circle">
+                    <div class="sk-circle1 sk-circle"></div>
+                    <div class="sk-circle2 sk-circle"></div>
+                    <div class="sk-circle3 sk-circle"></div>
+                    <div class="sk-circle4 sk-circle"></div>
+                    <div class="sk-circle5 sk-circle"></div>
+                    <div class="sk-circle6 sk-circle"></div>
+                    <div class="sk-circle7 sk-circle"></div>
+                    <div class="sk-circle8 sk-circle"></div>
+                    <div class="sk-circle9 sk-circle"></div>
+                    <div class="sk-circle10 sk-circle"></div>
+                    <div class="sk-circle11 sk-circle"></div>
+                    <div class="sk-circle12 sk-circle"></div>
+                </div>
+            </div>
+            <div class="item3">
+                <div class="preloader">
+                    <div class="preloader__square"></div>
+                    <div class="preloader__square"></div>
+                    <div class="preloader__square"></div>
+                    <div class="preloader__square"></div>
+                </div>
+            </div>
+            <div class="item4">
+                <div class="loader">
+                    <span class="progress-loader count">100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="zukan-page">
+            <p class="kimochi-point"><span class="emoji">&#x1f973;</span>きもちいいポイント：退屈させないユニークなアニメーション</p>
+            <div class="desc-container">
+                <p class="zukan-page-desc btn-desc">
+                    どうしても画像や動画ファイルをWEBサイトに組みこむとそれを読み込むのに時間がかかってします場合があります。
+                    Googleの調査では読み込み時間が3秒を超えるとそのサイトから離脱してしまう人がかなりの割合でいることがわかっています。
+                    どうしても時間がかかってしまう場合の対策としてユニークなローディング画面を実装して中身を見てもらいたいですね。
+                </p>
+            </div>
+            <a href="../index.html" class="back-mokuzi">目次へ戻る</a>
+            <p class="copy"><small>© shion 2021</small></p>
+        </div>
+    </main>
+    <script>
+        $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 10000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+            if ($(this).html() < 10) {
+                $(this).html('0' + Math.ceil(now));  
+            }
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

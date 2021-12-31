@@ -1,0 +1,68 @@
+
+body{
+    cursor: none;
+}
+#stalker {
+    pointer-events: none;
+    position: fixed;
+    top: -4px;     
+    left: -4px;    
+    width: 8px;   
+    height: 8px;  
+    background: rgba(0,0,0,1);
+    border-radius: 50%;
+    // transition: transform 0.2s, top, 0.5s, left 0.5s, width .5s, height .5s, background-color .5s;
+    // transition-timing-function: ease-out;
+    z-index: 999;
+    &.hov_{
+        background: rgba(0,0,0,0);
+        border: 2px solid #fff;
+        width: 90px;
+        height: 90px;
+        top: -45px;
+        left: -45px;
+    }
+}
+#follow{
+    pointer-events: none;
+    position: fixed;
+    top: -32px;     //大きさに合わせて座標調節
+    left: -32px;    //大きさに合わせて座標調節
+    width: 64px;
+    height: 64px;
+    background: rgba(248,217,47,0.5);
+    transition: transform 0.2s, top, 0.5s, left 0.5s, width .5s, height .5s, background-color .5s;
+    transition-timing-function: ease-out;
+    border-radius: 50%;
+    z-index: 998;
+    &.hov_{
+        transition: 0.1s;
+        // background-image: linear-gradient( 135deg, #C2FFD8 10%, #465EFB 100%);
+        background: transparent;
+    }
+}
+
+.mousestalk-content_container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.sample-link-image:not(:first-child){
+    margin-left: 25px;
+}
+.sample-link-image{
+    background-color: #1a1a1a;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.sample-link-image img{
+    background-size: cover;
+    opacity: 0.4;
+    transition: all .2s;
+    transform: scale(1);
+    &:hover{
+    opacity: 1;
+    transition: .25s linear;
+    transform: scale(1.03);
+    }
+}

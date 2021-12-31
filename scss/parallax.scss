@@ -1,0 +1,44 @@
+//parallax
+.parallax-content_container{
+    overflow: scroll;
+    max-width: 1200px;
+    height: 500px;
+    perspective: 1px;
+    background-color: darkslategrey;
+}
+.parallax-bg{
+    background-image: url(../images/sample-parallax.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120%;
+}
+// .parallax-bg2{
+//     background-image: url(../code/images/sample-parallax2.jpg);
+//     background-attachment: fixed;
+//     background-position: 500px;
+//     background-repeat: no-repeat;
+//     height: 100%;
+// }
+.parallax-yohaku{
+    height: 500px;
+    background-color:darkslategrey;
+    p{
+        padding-top: 230px;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff
+    }
+}
+.parallax-sample_text{
+    display: block;
+    padding-top: 200px;
+    font-weight: 700;
+    font-size: 9.5rem;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.parallax{
+    display: flex;
+    justify-content: center;
+}

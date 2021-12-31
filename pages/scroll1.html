@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fadein.css">
+    <link rel="icon" href="../images/1f4d6.png">
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'odm7isa',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+        </script>
+    <title>スクロールエフェクト１</title>
+</head>
+<body>
+    <main class="content">
+        <h1 class="zukan-page-title">スクロールエフェクト１</h1>
+        <h2 class="scroll-text">スクロールしてください</h2>
+        <div class="fadein">
+            <div class="fadein-content_container">
+                <div class="fadein-sample scroll-trigger">
+                    <img src="../images/sample-parallax.jpg" alt="sample-image" class="fadein-sample_image">
+                    <p>サンプルきもちいい</p>
+                </div>
+                <div class="fadein-sample scroll-trigger poyoyon">
+                    <img src="../images/sample-parallax2.jpg" alt="sample-image" class="fadein-sample_image">
+                    <p>サンプルきもちいい</p>
+                </div>
+                <div class="fadein-sample scroll-trigger fadeup">
+                    <img src="../images/sample-parallax3.jpg" alt="sample-image" class="fadein-sample_image">
+                    <p>サンプルきもちいい</p>
+                </div>
+            </div>
+        </div>
+        <div class="zukan-page">
+                <p class="kimochi-point"><span class="emoji">&#x1f973;</span>きもちいいポイント：するっ、ぽよん、ふわっ</p>
+                <div class="desc-container">
+                <p class="zukan-page-desc btn-desc"> 
+                    スクロールエフェクトといっても一つではなくたくさん種類があり、マクロな部分でもありますがかなりサイトにリッチな印象を持たせることができます！
+                    これらがあるかないかで、webサイトのコンテンツを見る際、ユーザーが迷いづらかったりコンテンツを強調させ興味を引かせることができます。是非更新して試してみてください！</p>
+                </div>
+            <a href="../index.html" class="back-mokuzi">目次へ戻る</a>
+            <p class="copy"><small>© shion 2021</small></p>
+        </div>
+    </main>
+    <script>
+const scrollTrigger = document.querySelectorAll('.scroll-trigger');
+
+if (scrollTrigger.length) {
+    scrollAnimation(scrollTrigger);
+}
+
+function scrollAnimation(trigger) {
+    window.addEventListener('scroll', function () {
+        for (var i = 0; i < trigger.length; i++) {
+            let position = trigger[i].getBoundingClientRect().top,
+                scroll = window.pageYOffset || document.documentElement.scrollTop,
+                offset = position + scroll,
+                windowHeight = window.innerHeight;
+            if (scroll > offset - windowHeight + 500) {
+                trigger[i].classList.add('is-animated');
+            }
+        }
+    });
+}
+    </script>
+</body>
+</html>

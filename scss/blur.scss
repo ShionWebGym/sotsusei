@@ -1,0 +1,38 @@
+//blur
+.blur-sample-img img{
+    transition: 0.3s all;
+}
+.blur-content_container{
+    display: flex;
+    justify-content: center;
+}
+.blur-sample-img:not(:first-child){
+    margin-left: 40px;
+}
+.blur-sample-img:not(:nth-child(2)) img{
+    &:hover{
+    filter: blur(3px);
+    transition: 0.3s all;
+    }
+}
+.blur-sample-img:nth-child(3) img:hover{
+    filter: blur(8px);
+}
+.blur-sample-img:nth-child(2) img{
+    filter: blur(4px);
+    &:hover{
+        filter: blur(0);
+        transition: 0.3s;
+    }
+}
+.blur-sample-img:nth-child(2){
+    position: relative;
+}
+.blur-neko{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    top: 160px;
+    left: 50px;
+}

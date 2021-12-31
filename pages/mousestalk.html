@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mousestalk.css">
+    <link rel="icon" href="../images/1f4d6.png">
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'odm7isa',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+        </script>
+    <title>マウスストーカー</title>
+</head>
+<body>
+    <main class="content">
+        <h1 class="zukan-page-title">マウスストーカー</h1>
+        <div class="mousestork">
+            <div id="stalker"></div>
+            <div id="follow"></div>
+            <div class="mousestalk-content_container">
+                <a tabindex="-1" class="sample-link-image"><img src="../images/zoom1.jpg" alt="sample-link-image"></a>
+                <a tabindex="-1" class="sample-link-image"><img src="../images/zoom2.jpg" alt="sample-link-image"></a>
+                <a tabindex="-1" class="sample-link-image"><img src="../images/zoom3.jpg" alt="sample-link-image"></a>
+            </div>
+        </div>
+        <div class="zukan-page">
+                <p class="kimochi-point"><span class="emoji">&#x1f973;</span>きもちいいポイント：ついてくるだけでなくリンクの強調にも役立ちます！</p>
+                <div class="desc-container">
+                <p class="zukan-page-desc btn-desc"> 
+                これはマウスストーカーと呼ばれるマウスに追従して動くアニメーションです！<br>
+                リンクやクリック可能な要素をわかりやすくできるといったUIを促進させる効果があります！
+                リッチな表現ができるし、意外と実装するのが簡単なのでカスタマイズして使ってみてはどうでしょうか？
+                </div>
+            <a href="../index.html" class="back-mokuzi no_stick_">目次へ戻る</a>
+            <p class="copy"><small>© shion 2021</small></p>
+        </div>
+    </main>
+    <script>
+const stalker = document.getElementById('stalker');
+const follow = document.getElementById('follow');
+let hov = false;
+
+document.addEventListener('mousemove', function (e) {
+    if (!hov) {
+    stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+    follow.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+    }
+});
+
+const linkElem = document.querySelectorAll('a:not(.no_stick_)');
+for (let i = 0; i < linkElem.length; i++) {
+    linkElem[i].addEventListener('mouseover', function (e) {
+        stalker.classList.add('hov_');
+        follow.classList.add('hov_');
+    });
+    linkElem[i].addEventListener('mouseout', function (e) {
+        stalker.classList.remove('hov_');
+        follow.classList.remove('hov_');      
+    });
+}
+    </script>
+</body>
+</html>
