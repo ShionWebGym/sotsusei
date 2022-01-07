@@ -18,6 +18,7 @@
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
         </script>
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/811a4b5ae2.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
@@ -27,11 +28,11 @@
     <main class="content">
         <nav>
             <ul class="nav">
-                <li class="nav-item"><a href="../index.html#ui-cat" class="ui-cat nav-cat">ユーザーインターフェース</a></li>
-                <li class="nav-item"><a href="../index.html#img-cat" class="img-cat nav-cat">画像に関するもの</a></li>
-                <li class="nav-item"><a href="../index.html#btn-cat" class="btn-cat nav-cat">ボタンに関するもの</a></li>
-                <li class="nav-item"><a href="../index.html#design-cat" class="design-cat nav-cat">デザインに関するもの</a></li>
-                <li class="nav-item"><a href="../index.html#scroll-cat" class="scroll-cat nav-cat">スクロールに関するもの</a></li>
+                <li class="nav-item"><a href="../index.html#ui-cat" class="ui-cat nav-cat">🌘ユーザーインターフェース</a></li>
+                <li class="nav-item"><a href="../index.html#img-cat" class="img-cat nav-cat">📸画像に関するもの</a></li>
+                <li class="nav-item"><a href="../index.html#btn-cat" class="btn-cat nav-cat">🕹ボタンに関するもの</a></li>
+                <li class="nav-item"><a href="../index.html#design-cat" class="design-cat nav-cat">✍デザインに関するもの</a></li>
+                <li class="nav-item"><a href="../index.html#scroll-cat" class="scroll-cat nav-cat">🖱スクロールに関するもの</a></li>
             </ul>
         </nav>
         <h1 class="zukan-page-title">ローディング画面</h1>
@@ -103,6 +104,7 @@
     });
 });
 
+twemoji.parse(document.body);
     </script>
 </body>
 </html>

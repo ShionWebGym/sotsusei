@@ -18,6 +18,7 @@
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
         </script>
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <title>きもちいい図鑑</title>
 </head>
@@ -40,32 +41,32 @@
                     <div class="mokuzi">
                         <h2>目次</h2>
                         <div class="mokuzi-list">
-                            <h3 id="ui-cat" class="cat">ユーザーインターフェース</h3>
+                            <h3 id="ui-cat" class="cat">🌘ユーザーインターフェース</h3>
                             <ul>
                                 <li><a href="pages/send.html" class="mokuzi-link">・フォーム、送信ボタン<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="#">・ダークテーマ<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="pages/loading.html" class="mokuzi-link">・ローディング<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="pages/mousestalk.html" class="mokuzi-link">・マウスストーカー<i class="fas fa-chevron-circle-right"></i></a></li>
                             </ul>
-                            <h3 id="img-cat" class="cat">画像に関するもの</h3>
+                            <h3 id="img-cat" class="cat">📸画像に関するもの</h3>
                             <ul>
                                 <li><a href="pages/zoom.html" class="mokuzi-link">・ズームイン/アウト<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="pages/blur.html" class="mokuzi-link">・ブラー効果<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="pages/parallax.html" class="mokuzi-link">・パララックス<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="pages/slideshow.html" class="mokuzi-link">・スライドショー<i class="fas fa-chevron-circle-right"></i></a></li>
                             </ul>
-                            <h3 id="btn-cat" class="cat">ボタンに関するもの</h3>
+                            <h3 id="btn-cat" class="cat">🕹ボタンに関するもの</h3>
                             <ul>
                                 <li><a href="pages/hoverbtn.html" class="mokuzi-link">・マウスホバー<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="pages/clickbtn.html" class="mokuzi-link">・マウスクリック<i class="fas fa-chevron-circle-right"></i></a></li>
                             </ul>
-                            <h3 id="design-cat" class="cat">デザインに関するもの</h3>
+                            <h3 id="design-cat" class="cat">✍デザインに関するもの</h3>
                             <ul>
                                 <li><a href="pages/neumor.html" class="mokuzi-link">・ニューモフィズム<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="pages/gradation.html" class="mokuzi-link">・グラデーション<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="#">・ヒーローヘッダー<i class="fas fa-chevron-circle-right"></i></a></li>
                             </ul>
-                            <h3 id="scroll-cat" class="cat">スクロールに関するもの</h3>
+                            <h3 id="scroll-cat" class="cat">🖱スクロールに関するもの</h3>
                             <ul>
                                 <li><a href="pages/smoothscroll.html" class="mokuzi-link">・スムーズスクロール<i class="fas fa-chevron-circle-right"></i></a></li>
                                 <li><a href="pages/scroll1.html" class="mokuzi-link">・スクロールエフェクト１<i class="fas fa-chevron-circle-right"></i></a></li>
@@ -77,9 +78,9 @@
                 <p class="copy"><small>© shion 2021</small></p>
             </div>
         </div>
-    </main>    
+    </main>
+    <script>
+        twemoji.parse(document.body);
+    </script>    
 </body>
-<script>
-
-</script>
 </html>
