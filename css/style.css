@@ -31,7 +31,7 @@ main {
 }
 
 .cat {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 40px;
   background-color: beige;
   border-radius: 20px;
@@ -103,13 +103,6 @@ main {
   margin-top: 0;
 }
 
-.content-container h3 {
-  font-size: 5rem;
-  font-weight: 700;
-  margin-top: 43%;
-  color: coral;
-}
-
 .kimochi-point {
   margin: 55px 0 50px 0;
   font-size: 1.5rem;
@@ -160,7 +153,101 @@ main {
   padding-right: 4px;
 }
 
-.fas {
+.fa-chevron-circle-right {
   float: right;
+}
+
+.hyousi {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 43%;
+  color: beige;
+  animation: poyoyon2 1s ease-in-out 1 forwards;
+}
+
+@keyframes poyoyon2 {
+  0% {
+    transform: scale(1, 1) translate(0, 0);
+  }
+  15% {
+    transform: scale(0.98, 0.9) translate(0, 5px);
+  }
+  30% {
+    transform: scale(1.02, 1) translate(0, 8px);
+  }
+  50% {
+    transform: scale(0.98, 1.05) translate(0, -8px);
+  }
+  70% {
+    transform: scale(1, 0.9) translate(0, 5px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0, 0);
+  }
+  0%, 100% {
+    opacity: 1;
+  }
+}
+
+svg {
+  z-index: -2;
+  position: absolute;
+  left: 0;
+}
+
+.nav {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nav-item {
+  margin-bottom: 1vh;
+}
+
+.nav-cat {
+  position: fixed;
+  border-left: 30px #FFB69C solid;
+  box-shadow: 0 2px 6px #333;
+  font-size: 2vh;
+  background: #f7f7f7;
+  height: 10vh;
+  display: inline-block;
+  width: 20vw;
+  text-align: left;
+  color: #333;
+  font-weight: 700;
+  padding: 36px 0px 0px 16px;
+  border-radius: 2px;
+  transition: .2s;
+  right: -10vw;
+}
+
+.nav-cat:hover {
+  background: #F7EFEB;
+  border-left: 30px #FF7F50 solid;
+  transition: .3s;
+  right: 0;
+}
+
+.ui-cat {
+  margin-top: 5vh;
+}
+
+.img-cat {
+  margin-top: 18vh;
+}
+
+.btn-cat {
+  margin-top: 31vh;
+}
+
+.design-cat {
+  margin-top: 44vh;
+}
+
+.scroll-cat {
+  margin-top: 57vh;
 }
 /*# sourceMappingURL=style.css.map */
