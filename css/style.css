@@ -34,9 +34,11 @@ img.emoji {
 
 .mokuzi {
   margin-left: 100px;
+  font-weight: 700;
 }
 
 .cat {
+  margin-top: 130px;
   font-size: 1.7rem;
   margin-bottom: 40px;
   background-color: beige;
@@ -54,11 +56,6 @@ img.emoji {
 
 .mokuzi-list {
   margin: auto;
-}
-
-.mokuzi-list ul {
-  margin-bottom: 130px;
-  /* display: flex; */
 }
 
 .mokuzi-list li {

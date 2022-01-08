@@ -34,8 +34,10 @@ img.emoji {
 }
 .mokuzi{
     margin-left: 100px;
+    font-weight: 700;
 }
 .cat{
+    margin-top: 130px;
     font-size: 1.7rem;
     margin-bottom: 40px;
     background-color: beige;
@@ -51,12 +53,12 @@ img.emoji {
 }
 .mokuzi-list{
     margin: auto;
-    ul{
-        margin-bottom: 130px;
-        /* display: flex; */
-        // display: grid;
-        // grid-template-columns: 30vh 38vh;
-    }
+    // ul{
+    //     margin-bottom: 130px;
+    //     /* display: flex; */
+    //     // display: grid;
+    //     // grid-template-columns: 30vh 38vh;
+    // }
     li{
         padding: 36px 0 36px 0;
     }
