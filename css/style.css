@@ -1,4 +1,4 @@
-main {
+body {
   font-family: a-otf-ud-shin-maru-go-pr6n, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -161,7 +161,7 @@ img.emoji {
 }
 
 .hyousi {
-  font-size: 4rem;
+  font-size: 4.3rem;
   font-weight: 700;
   margin-top: 43%;
   color: beige;
@@ -252,5 +252,9 @@ svg {
 
 .scroll-cat {
   margin-top: 57vh;
+}
+
+.brank {
+  margin-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */

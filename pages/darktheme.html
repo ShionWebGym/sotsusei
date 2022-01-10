@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/darktheme.css">
+    <link rel="icon" href="../images/1f4d6.png">
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'odm7isa',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+        </script>
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <title>ダークテーマ</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="../index.html#ui-cat" class="ui-cat nav-cat">🌘ユーザーインターフェース</a></li>
+                <li class="nav-item"><a href="../index.html#img-cat" class="img-cat nav-cat">📸画像に関するもの</a></li>
+                <li class="nav-item"><a href="../index.html#btn-cat" class="btn-cat nav-cat">🕹ボタンに関するもの</a></li>
+                <li class="nav-item"><a href="../index.html#design-cat" class="design-cat nav-cat">✍デザインに関するもの</a></li>
+                <li class="nav-item"><a href="../index.html#scroll-cat" class="scroll-cat nav-cat">🖱スクロールに関するもの</a></li>
+            </ul>
+        </nav>
+        <h1 class="zukan-page-title">ダークテーマ🌝</h1>
+            <div class="btn-container">       
+                <input id="btn-mode" type="checkbox" class='switcher__indicator'>
+                <label for="btn-mode" class="switcher"></label>
+            </div>
+        <div class="mousestalk-content_container">
+            <a tabindex="-1" class="sample-link-image"><img src="../images/zoom1.jpg" alt="sample-link-image"></a>
+            <a tabindex="-1" class="sample-link-image"><img src="../images/zoom2.jpg" alt="sample-link-image"></a>
+            <a tabindex="-1" class="sample-link-image"><img src="../images/zoom3.jpg" alt="sample-link-image"></a>
+        </div>
+        <div class="zukan-page">
+        <p class="kimochi-point"><span class="emoji">&#x1f973;</span>きもちいいポイント：ダークな雰囲気とバッテリーの長命化が期待できる</p>
+            <div class="desc-container">
+                <p class="zukan-page-desc"> 
+                    <span class="brank">ダークテーマ</span>に関しては様々な議論がされている中で、スマートフォンやノートパソコンのバッテリーの節約になる他、目への疲れを軽減できる、ダークモードにすると集中力が高まり気が散りにくいなど諸説ありますがバッテリーの節約になるのは実は本当らしいです。<br>Twitterやspotifyなど自分が普段使うアプリではダークテーマが選択肢にあったりコンテンツを目立たせる効果があるという説もあるみたいですよ！</p>
+                </div>
+            <a href="../index.html" class="back-mokuzi">目次へ戻る</a>
+            <p class="copy"><small>© shion 2021</small></p>
+        </div>
+    </main>
+    <script>
+            twemoji.parse(document.body);
+
+        const btn = document.querySelector("#btn-mode");
+            btn.addEventListener("change", () => {
+            if (btn.checked == true) {
+             // ダークテーマ
+                document.body.classList.remove("default");
+                document.body.classList.add("darktheme");
+            } else {
+             // デフォルト
+                document.body.classList.remove("darktheme");
+                document.body.classList.add("default");
+            }
+            });
+</script>
+</body>
+</html>
