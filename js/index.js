@@ -1,3 +1,6 @@
-var rellax = new Rellax('.rellax',{
-    wrapper:'.parallax-content_container'
-});
+window.onload = ()=>{
+    const loader = document.getElementById('loader-wrap');
+    loader.classList.add('loaded');
+};
+
+twemoji.parse(document.body);

@@ -259,3 +259,34 @@ $linkpink:deeppink;
     margin-left : 15px;
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+#loader-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    z-index: 9999;
+    /* 環境によって「z-index」追加 */
+}
+/* 読み込み完了後に「loaded」を付与する */
+#loader-wrap.loaded {
+    animation: fadeOut 2s forwards;
+}
+.loader{
+    color: #ed1c24;;
+	font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+	margin:40vh auto;
+	text-shadow: 0 -3px 0 #fff,0 2px 0 #fff, 0 8px 15px rgba(0,0,0,0.3);
+}
